@@ -8,9 +8,11 @@ npm install
 export MYAPP_VAR1=value1; export MYAPP_VAR2=value2; npm start
 ```
 
+Accessing localhost:3000 in a browser will now serve public/index.html, and have a button for loading VAR1 and VAR2 from a JS variable.
+
 ## About
 
-Currently a demo of serving system environment variables with a given prefix as a JSON file that can be loaded as a static resource into an HTML page.
+Currently a demo of serving system environment variables with a given prefix as a JS file that can be loaded into an HTML page as a static resource.
 
 Code adapted from several examples:
 
