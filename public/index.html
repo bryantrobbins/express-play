@@ -1,6 +1,36 @@
 <head>
   <title>Home</title>
+  <script src="config.js"></script>
+  <script>
+      function addVartableRow(key, val) {
+        var table = document.getElementById("vartable");
+        var row = table.insertRow();
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        cell1.innerHTML = key;
+        cell2.innerHTML = val;
+    }
+    function loadConfig() {
+        for (var key in window.__config) {
+          if (window.__config.hasOwnProperty(key)) {
+            addVartableRow(key, window.__config[key])
+          }
+        }
+    }
+  </script>
+
 </head>
 <body>
-This is the homepage, served by Express.
+    This is the homepage, served by Express.
+    <button onclick="loadConfig()">Load Config from JS</button>
+    <table id="vartable">
+        <tr>
+            <th>
+                Variable
+            </th>
+            <th>
+                Value
+            </th>
+        </tr>
+    </table>
 </body>

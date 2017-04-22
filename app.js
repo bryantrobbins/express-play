@@ -6,17 +6,18 @@ app.use(express.static('public'))
 envPrefix = "MYAPP"
 envReply = null
 
-app.get('/config', function(req, res) {
-    if (envReply == null) {
+app.get('/config.js', function(req, res) {
+    if (envReply === null) {
         envReply = {}
         for (var envKey in process.env) {
             if (envKey.startsWith(envPrefix)) {
-                envReply[envKey] = process.env[envKey]
+                storeKey = envKey.slice(envPrefix.length+1, envKey.length)
+                envReply[storeKey] = process.env[envKey]
             }
         }
     }
     
-    res.send(envReply)
+    res.send('(function (window) { window.__config = window.__config || {}; window.__config = ' + JSON.stringify(envReply) + ' }(this));')
 })
 
 app.listen(3000, function () {
