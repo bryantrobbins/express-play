@@ -14,6 +14,9 @@ Currently a demo of serving system environment variables with a given prefix as 
 
 Code adapted from several examples:
 
+* https://expressjs.com/en/starter/hello-world.html
+* https://expressjs.com/en/starter/static-files.html
+* http://stackoverflow.com/questions/4870328/read-environment-variables-in-node-js
 * http://www.jvandemo.com/how-to-configure-your-angularjs-application-using-environment-variables/ 
 * http://stackoverflow.com/questions/684672/how-do-i-loop-through-or-enumerate-a-javascript-object
 * https://www.w3schools.com/jsref/met_table_insertrow.asp
