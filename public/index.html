@@ -1,5 +1,6 @@
 <head>
   <title>Home</title>
+  <script src="https://unpkg.com/vue"></script>
   <script src="config.js"></script>
   <script>
       function addVartableRow(key, val) {
@@ -18,11 +19,15 @@
         }
     }
   </script>
+  <script>
+      window.addEventListener('load', function () {
+        loadConfig();
+      })
+   </script>
 
 </head>
 <body>
     This is the homepage, served by Express.
-    <button onclick="loadConfig()">Load Config from JS</button>
     <table id="vartable">
         <tr>
             <th>
@@ -33,4 +38,16 @@
             </th>
         </tr>
     </table>
+    
+    <div id="app">
+      <p>{{ message }}</p>
+    </div>
+    <script>
+           var app = new Vue({
+              el: '#app',
+              data: {
+                message: 'Hello Vue.js!'
+              }
+            });
+     </script>
 </body>
