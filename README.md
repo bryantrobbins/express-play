@@ -9,7 +9,7 @@ npm install
 export MYAPP_VAR1=value1; export MYAPP_VAR2=value2; npm start
 ```
 
-Accessing localhost:3000 in a browser will now serve public/index.html, and have a button for loading VAR1 and VAR2 from a JS variable.
+Accessing localhost:3000 in a browser will now serve public/index.html, which includes a Table of environment variables and 7 samples from the Vue.js intro.
 
 ## About
 
