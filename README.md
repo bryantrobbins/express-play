@@ -12,7 +12,10 @@ Accessing localhost:3000 in a browser will now serve public/index.html, and have
 
 ## About
 
-Currently a demo of serving system environment variables with a given prefix as a JS file that can be loaded into an HTML page as a static resource.
+Currently includes:
+
+* Demo of serving system environment variables with a given prefix as a JS file that can be loaded into an HTML page as a static resource.
+* Introductory examples from Vue.js documentation.
 
 Code adapted from several examples:
 
@@ -22,3 +25,4 @@ Code adapted from several examples:
 * http://www.jvandemo.com/how-to-configure-your-angularjs-application-using-environment-variables/ 
 * http://stackoverflow.com/questions/684672/how-do-i-loop-through-or-enumerate-a-javascript-object
 * https://www.w3schools.com/jsref/met_table_insertrow.asp
+* https://vuejs.org/v2/guide/index.html
