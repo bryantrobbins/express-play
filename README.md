@@ -1,5 +1,6 @@
 # express-play
-Trying to learn and work with Express.js
+
+Trying to learn and work with Express.js, and other Javascript technologies (front-end and back-end).
 
 ## Running
 
